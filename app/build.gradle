@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.ddss.notes'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.ddss.notes"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -30,9 +30,26 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    // Room (for database)
+    implementation "androidx.room:room-runtime:2.4.3"
+    annotationProcessor 'androidx.room:room-compiler:2.4.3'
+
+    // RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    // Scalable Size Unit (support for different screen sizes)
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
+    // Material Design
+    implementation "com.google.android.material:material:1.6.1"
+
+    // Rounded ImageView
+    implementation "com.makeramen:roundedimageview:2.3.0"
 }
