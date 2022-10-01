@@ -48,16 +48,27 @@
             android:layout_height="@dimen/_35sdp"
             android:layout_marginStart="@dimen/_12sdp"
             android:background="@null"
+            android:fontFamily="@font/ubuntu_medium"
+            android:hint="@string/search_notes"
             android:imeOptions="actionDone"
             android:importantForAutofill="no"
             android:includeFontPadding="false"
             android:inputType="text"
             android:textColor="@color/white"
             android:textColorHint="@color/colorTextHint"
-            android:textSize="@dimen/_13sdp"/>
-
-
+            android:textSize="@dimen/_13sdp" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/layoutQuickActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorQuickActionBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="parent">
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
